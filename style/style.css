@@ -7,7 +7,7 @@ body {
 }
 
 .high-bar {
-  width: 100%;
+  width: 100vw;
   height: 2rem;
   background-color: #fddf37;
   display: flex;
@@ -45,4 +45,44 @@ body {
   text-decoration: none;
   color: #30435C;
   font-size: 0.75rem;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: white;
+}
+.nav-bar img {
+  width: 8rem;
+}
+.nav-bar nav a {
+  text-decoration: none;
+  color: #30435C;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin: 0 0.8rem;
+}
+.nav-bar div {
+  background-color: #02AFBC;
+  padding: 1rem;
+}
+.nav-bar div:hover {
+  background-color: #028c96;
+}
+.nav-bar div a {
+  color: white;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-direction: column;
+}
+.nav-bar div a svg {
+  width: 2rem;
+  height: 2rem;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
