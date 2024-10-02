@@ -116,4 +116,44 @@ body {
     }
   }
 }
+.main-title{
+  text-align: center;
+}
+
+
+$max-tab-count: 5;
+$tab-wrap-border-radius: 6px;
+
+
+.tab {
+  display: none;
+  @for $i from 1 through $max-tab-count {
+    &:checked:nth-of-type(#{$i}) ~ .tab__content:nth-of-type(#{$i}) {
+      opacity: 1;
+      transition: 0.5s opacity ease-in, 0.8s transform ease;
+      position: relative;
+      top: 0;
+      z-index: 100;
+      transform: translateY(0px);
+      text-shadow: 0 0 0;
+    }
+  }
+  
+  
+  &__content {
+    padding: 10px 25px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+    transform: translateY(-3px);
+    border-radius: $tab-wrap-border-radius;
+  }
+}
+
+
+
+
 
